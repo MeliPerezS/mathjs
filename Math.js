@@ -81,3 +81,8 @@ function solution(lado1, lado2, lado3) {
       return Math.round(altura);
     }
   }
+
+  function porcentaje(precio, descuento) {
+    const precioxPagar = precio * (100 - descuento) / 100;
+    return 'Con el descuento usted debe pagar ' + precioxPagar
+  }
