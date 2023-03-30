@@ -17,7 +17,22 @@
         <button id="btnCalcular">Calcular</button>
         <p id="result"></p>
     </form>
-    <script src="./porcentaje.js"></script>
+    <h1> Calcula aqui el valor a pagar si tienes un cupón <3 </h1>
+    <div id="cupones">
+        <label for="valorCupon">Precio del Articulo:</label>
+        <input id="valorCupon" type="number"> 
+        <label for="discount-names">Discount name:</label>
+        <select name="discount-names" id="discount-names">
+            <option value= "20">Winter 20%</option>
+            <option value="40">Spring 40%</option>
+            <option value="50">Summer 50%</option>
+            <option value="60">Autumn 60%</option>
+        </select>
+        </input>
+        <button id="btnCalcularCupon" class="btnCalcularCupon">Calcular</button>
+        <p id="resultCupon"></p>
+    </div>      
+<script src="./porcentaje.js"></script>
 </body>
 </html>
 

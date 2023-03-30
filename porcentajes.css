@@ -7,20 +7,39 @@ h1 {
 
 #calculadora {
     width: 400px;
-    height: 400px;
+    height: 300px;
     margin: 100px;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 25px;
+    border-radius: 20px;
 }
 
 input{
 	margin: 30px;
 }
 
+label{
+    margin: 30px 30px;
+}
+
+select{
+    margin-right: 20px;
+}
+
+#cupones {
+    width: 400px;
+    height: 300px;
+    margin: 100px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 25px;
+    border-radius: 20px;
+}
+
 
 /* CSS */
-#btnCalcular {
+#btnCalcular, #btnCalcularCupon {
   background-color: transparent;
   border: 1px solid #266DB6;
   box-sizing: border-box;
@@ -36,6 +55,11 @@ input{
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
+#btnCalcularCupon{
+    margin-top: 30px;
+}
+
 
 #btnCalcular:hover,
 #btnCalcular:active {
