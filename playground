@@ -1,0 +1,26 @@
+const users = [];
+users.push({ id: 123, name: 'Juanito Alcachofa' });
+users.push({ id: 456, name: 'Juanita Alcaparra' });
+
+function findUser(idIngresado){
+  for (i= 0; i< users.length; i++){
+    const actualUser = (users[i]);
+    if (idIngresado == actualUser.id) {
+      return actualUser.name;
+    }
+  }
+  return false;
+}
+
+solution(users, 456);
+solution(users, 999);
+
+function solution(users, id) {
+  for (i= 0; i< users.length; i++){
+    const actualUser = (users[i]);
+    if (id == actualUser.id) {
+      return actualUser.name;
+    }
+  }
+  return false;
+}
