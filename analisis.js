@@ -89,3 +89,4 @@ function medianaEmpresaYear(nombre, year) {
     return PlatziMath.calcularMediana(empresas[nombre][year]);
   }
 }
+

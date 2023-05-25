@@ -1,0 +1,54 @@
+//  Objeto
+var melisa = {
+    edad: 33,
+    sexo: 'femenino',
+    ojos: 'marron'
+};
+
+var ricardo = {
+    edad: 32,
+    sexo: 'masculino',
+    ojos: 'marron'
+};
+
+// Clases
+
+function Humano(edad, sexo, ojos) {
+    this.edad = edad;
+    this.sexo = sexo;
+    this.ojos = ojos;
+    this.saludo = () => {
+        console.log('Hola soy' + this.nombre + ' y espero que estes bien');
+    };
+}
+
+class Humano {
+    constructor(edad, sexo, ojos) {
+        this.edad = edad;
+        this.sexo = sexo;
+        this.ojos = ojos;
+    }
+
+    saludo() {
+        console.log('Hola soy' + this.nombre + ' y espero que estes bien');
+    }
+}
+
+class Perro {
+    static saluda() {
+        console.log('Hola soy un perro');
+    }
+
+    static saluda() {
+        console.log('Hola soy un perro');
+    }
+}
+
+// Instancia
+
+var melisa = new Humano(33, 'femenino', 'marron');
+melisa.saludo();
+var ricardo = new Humano(32, 'masculino', 'marron');
+var emma = new Humano(4, 'femenino', 'marron');
+
+Perro.saludo();
